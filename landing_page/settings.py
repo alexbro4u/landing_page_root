@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crm.apps.CrmConfig',
+    'cms.apps.CmsConfig',
+    'price.apps.PriceConfig',
+    'telebot.apps.TelebotConfig',
 ]
 
 MIDDLEWARE = [
@@ -120,8 +123,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "landing_page/static/"),
 ]
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'static/')
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
